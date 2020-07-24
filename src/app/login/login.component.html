@@ -1,0 +1,11 @@
+<div style="text-align: center;">
+    <h2>SI ENTRA A LOGIN</h2>
+    <div *ngFor = 'let login of loginVector'>
+        <img [src] = 'login.picture.medium'>
+        <h2>ID:{{ login.login.uuid }} Nombre de Usuario: {{ login.login.username }}</h2>
+        <h2>Claves: {{ login.login.salt }} Contraseña: {{ login.login.md5 }}</h2>
+        <!--<h2>{{ login.name.title }} {{ login.name.first }} {{ login.name.last }}</h2>-->
+        <h3>{{ login.email }}</h3>
+        <p>{{ login.phone }}</p>
+    </div>
+</div>

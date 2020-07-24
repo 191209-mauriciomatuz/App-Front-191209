@@ -1,0 +1,14 @@
+<div style="text-align: center;">
+    <H2>SI ENTRA A DASHBOARD</H2>
+    <div *ngFor = 'let dashboard of dashBoardVector'>
+        <img [src] ="dashboard.picture.medium">
+        <h2>{{ dashboard.name.title }} {{ dashboard.name.first }} {{ dashboard.name.last }}</h2>
+        <h2>Genero:{{ dashboard.gender }}</h2>
+        <h2>{{ dashboard.location.street.number }} {{ dashboard.location.street.name }}</h2>
+        <h3>{{ dashboard.city }} </h3>
+        <h3>{{ dashboard.postcode }} </h3>
+        <h3>{{ dashboard.email }} </h3>
+        <h3>Fecha:{{ dashboard.registered.date }} Edad:{{ dashboard.registered.age }} </h3>
+       <!-- <h3>Seed:{{ dashboard.info.seed }}</h3>-->
+    </div>
+</div>

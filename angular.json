@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AppAnguCS"
+    }
+  },
+  "defaultProject": "AppAnguCS",
+  "cli": {
+    "analytics": "c7832203-b48a-43b3-95c3-1bc6f6edd2db"
+  }
 }
